@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 3px solid #0057b7;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #0057b7;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ffd700;
+    background-color: #0057b7;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0057b7;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #0057b7, #ffd700);
+    margin: 30px 0;
+}
+
+h3 {
+    color: #0057b7;
+    font-size: 1.5rem;
+    margin: 25px 0 15px 0;
+}
+
+.performers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.performer-group {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0057b7;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+}
+
+li:before {
+    content: "•";
+    color: #ffd700;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -10px;
+}
+
+.artist-name {
+    font-weight: bold;
+    color: #0057b7;
+    font-size: 1.1rem;
+}
+
+.artist-list {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.credits {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.creator-tag {
+    display: inline-block;
+    background-color: #0057b7;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #0057b7;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .performers {
+        flex-direction: column;
+    }
+    
+    .performer-group {
+        min-width: 100%;
+    }
+}
